@@ -113,26 +113,7 @@
 		height: 1px;
 		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 	}
-/* 
-	table {	
-		border-collapse: collapse;
-		font-family: Futura, Arial, sans-serif;
-	}
 
-	caption {
-		font-size: larger;
-		margin: 1em auto;
-	}
-
-	th,td {
-		padding: .65em;
-	}
-
-	th,td {
-		border-bottom: 1px solid #ddd;
-		border-top: 1px solid #ddd;
-		text-align: center;
-	} */
 </style>
 
 <html>
@@ -144,22 +125,22 @@
   <body>
     <br>
           <center>
-          	<span style="font-size:42px">Unsupervised Any-to-Many Audiovisual Synthesis via Exemplar Autoencoders</span>
+          	<span style="font-size:42px">Approaches</span>
 	  		  <table align=center width=600px>
 	  			  <tr>
 	  	              <td align=center width=100px>
 	  					<center>
-							<span style="font-size:20px"><a href="https://dunbar12138.github.io/">Kangle Deng</a></span>
+							<span style="font-size:20px"><a href="https://arxiv.org/abs/1710.07654">Deep Voice 3</a></span>
 		  		  		</center>
 						  </td>
 	  	              <td align=center width=100px>
 	  					<center>
-							<span style="font-size:20px"><a href="http://www.cs.cmu.edu/~aayushb/">Aayush Bansal</a></span>
+							<span style="font-size:20px"><a href="https://arxiv.org/abs/1710.08969">Attention Bases TTS</a></span>
 		  		  		</center>
 						  </td>
 						<td align=center width=100px>
 							<center>
-								<span style="font-size:20px"><a href="http://www.cs.cmu.edu/~deva/">Deva Ramanan</a></span>
+								<span style="font-size:20px"><a href="https://arxiv.org/abs/1803.09047">Prosody Transfer</a></span>
 								</center>
 						</td>
 			  </table>
@@ -169,53 +150,31 @@
 	  			  <tr>
 	  	              <td align=center width=150px>
 	  					<center>
-	  						<span style="font-size:24px"><a href='http://scs00197.sp.cs.cmu.edu/'> [Demo]</a>
+	  						<span style="font-size:24px"><a href='https://arxiv.org/abs/1809.08895'>Transformers</a>
 		  		  		</center>
 		  		  	  </td>
-	  	              <td align=center width=150px>
-	  					<center>
-	  						<span style="font-size:24px"><a href='https://github.com/dunbar12138/Audiovisual-Synthesis'> [GitHub]</a></span>
-		  		  		</center>
-		  		  	  </td>
-	  	              <td align=center width=150px>
-	  					<center>
-	  						<span style="font-size:24px"><a href='http://www.cs.cmu.edu/~aayushb/AudioCon/AudioCon.pdf'> [Paper]</a></span>
-		  		  		</center>
-						  </td>
-						<td align=center width=150px>
-						<center>
-							<span style="font-size:24px"><a href='https://arxiv.org/abs/2001.04463'> [arXiv]</a></span>
-							</center>
-						</td>
+	  
 
 		  		  	 </tr>
 	  			  <tr>
 			  </table>
-	  		  <!-- <table align=center width=800px>
-	  	              <td align=center width=150px>
-	  					<center>
-	  						<span style="font-size:18px"><b>Also check out our new work on <a href='https://richzhang.github.io/ideepcolor'> Interactive Deep Colorization</a>!</b>
-		  		  		</center>
-		  		  	  </td>
-		  		  	 </tr>
-			  </table> -->
+
           </center>
 
-<!--   		  <br><br>
-		  <hr> -->
+
 
   		  <br>
   		  <table align=center width=850px>
   			  <tr>
   	              <td width=400px>
   					<center>
-  	                	<a href="./images/fig_teaser.jpg"><img class="rounded" src = "./images/fig_teaser.jpg" height="500px"></img></href></a><br>
+  	                	<a href="./images/fig_teaser.jpg"><img class="rounded" src = "https://miro.medium.com/max/3330/1*7HOERatJ83E1KkKr1SVAug.png" height="500px"></img></href></a><br>
 					</center>
   	              </td>
                 </tr>
   	              <td width=400px>
   					<center>
-  	                	<span style="font-size:14px"><i>Our approach translates the input audio fromany speaker to that of a list of many known speakers. We show an example of audio translation in the top half. With little modification, our approach can also generate video alongside audio from an input audiosignal. The second half shows a variety of facial examples created using our method for audio-video generation.</i>
+  	                	<span style="font-size:14px"><i> The project is to convert textual input of any individual to an output of a potential individual along with the alignment of audio between the input and the output..</i>
 					</center>
   	              </td>
 
@@ -223,41 +182,106 @@
 
       	  <br>
 		  <hr>
-			<!-- <div class="disclaimerbox">
+	
 
-	  		 <span style="color:#646464">
-	  		  	<center><span style="font-size:28px"><b>How to interpret the results</b></span></center>
 
-	  		  	<br>
-				
-				<i> Welcome! Computer vision algorithms often work well on some images, but fail on others. Ours is like this too. We believe our work is a significant step forward in solving the colorization problem. However, there are still many hard cases, and this is by no means a solved problem. Some failure cases can be seen <a href="#vgg_res">below</a> and the figure <a href="./resources/images/imnet_failures.jpg">here</a>.
 
-				</i>
 
-				<br><br>
 
-				<i>This is partly because our algorithm is trained on one million images from the Imagenet dataset, and will thus work well for these types of images, but not necessarily for others. We call this the <i>"dataset bias"</i> problem. We include <a href="#bw_legacy">colorizations of black and white photos of renowned photographers</a> as an interesting <i>"out-of-dataset"</i> experiment and make no claims as to artistic improvements, although we do enjoy many of the results!</i>
 
-				<br><br>
 
-				<i>There has been some concurrent work on this subject as well. Specifically, see Larsson et al. and Iizuka et al. <a href="#related_work">below</a>.</i>
+          <table align=center width=850px>
+            <center><h1>Abstract - Deep Voice 3</h1></center>
+        </table>
+        We present Deep Voice 3, a fully-convolutional attention-based neural text-to-speech (TTS) system. Deep Voice 3 matches state-of-the-art neural speech synthesis systems in naturalness while training ten times faster. We scale Deep Voice 3 to data set sizes unprecedented for TTS, training on more than eight hundred hours of audio from over two thousand speakers. In addition, we identify common error modes of attention-based speech synthesis networks, demonstrate how to mitigate them, and compare several different waveform synthesis methods. We also describe how to scale inference to ten million queries per day on one single-GPU server. 
+        <br><br>
+        <br>
+        
+        <table align=center width=600px>
+               <tr>
+                   <!--<td width=300px align=left>-->
+                   <!-- <a href="http://arxiv.org/pdf/1603.08511.pdf"> -->
+                 <td><a href="https://arxiv.org/pdf/1710.07654.pdf"><img class="layered-paper-big" style="height:175px" src="./deepvoice.png"/></a></td>
+                 <td><span style="font-size:14pt">Wei Ping, Kainan Peng, Andrew Gibiansky, Sercan O. Arik, Ajay Kannan, Sharan Narang, Jonathan Raiman, John Miller<br>
+                    Deep Voice 3: Scaling Text-to-Speech with Convolutional Sequence Learning.<br>
+                 On ArXiv, 2018 .</a>
+                 </span>
+                 </td>
+                   </td>
+             </tr>
+           </table>
+         <br>
 
-				<br><br>
 
-				<i>Please enjoy our results, and if you're so inclined, <a href="http://demos.algorithmia.com/colorize-photos/">try the model</a> yourself</i>!
+      <hr>
 
-			</span>
 
-			</div>
-  		  <br><br>
-		  <hr> -->
+
+      <table align=center width=850px>
+        <center><h1>Abstract - Attention-Based TTS</h1></center>
+    </table>
+    This paper describes a novel text-to-speech (TTS) technique based on deep convolutional neural networks (CNN), without any recurrent units. Recurrent neural network (RNN) has been a standard technique to model sequential data recently, and this technique has been used in some cutting-edge neural TTS techniques. However, training RNN component often requires a very powerful computer, or very long time typically several days or weeks. Recent other studies, on the other hand, have shown that CNN-based sequence synthesis can be much faster than RNN-based techniques, because of high parallelizability. The objective of this paper is to show an alternative neural TTS system, based only on CNN, that can alleviate these economic costs of training. In our experiment, the proposed Deep Convolutional TTS can be sufficiently trained only in a night (15 hours), using an ordinary gaming PC equipped with two GPUs, while the quality of the synthesized speech was almost acceptable.
+    <br><br>
+    <br>
+    
+    <table align=center width=600px>
+           <tr>
+               <!--<td width=300px align=left>-->
+               <!-- <a href="http://arxiv.org/pdf/1603.08511.pdf"> -->
+             <td><a href="https://arxiv.org/pdf/1710.08969.pdf"><img class="layered-paper-big" style="height:175px" src="./attention.png"/></a></td>
+             <td><span style="font-size:14pt">Hideyuki Tachibana, Katsuya Uenoyama, Shunsuke Aihara<br>
+                Efficiently Trainable Text-to-Speech System Based on Deep Convolutional Networks with Guided Attention<br>
+             On ArXiv, 2017 .</a>
+             </span>
+             </td>
+               </td>
+         </tr>
+       </table>
+     <br>
+
+
+  <hr>
+
+  <table align=center width=850px>
+    <center><h1>Abstract- Prosody Transfer</h1></center>
+</table>
+We present an extension to the Tacotron speech synthesis architecture that learns a latent embedding space of prosody, derived from a reference acoustic representation containing the desired prosody. We show that conditioning Tacotron on this learned embedding space results in synthesized audio that matches the prosody of the reference signal with fine time detail even when the reference and synthesis speakers are different. Additionally, we show that a reference prosody embedding can be used to synthesize text that is different from that of the reference utterance. We define several quantitative and subjective metrics for evaluating prosody transfer, and report results with accompanying audio samples from single-speaker and 44-speaker Tacotron models on a prosody transfer task. 
+<br><br>
+<br>
+
+<table align=center width=600px>
+       <tr>
+           <!--<td width=300px align=left>-->
+           <!-- <a href="http://arxiv.org/pdf/1603.08511.pdf"> -->
+         <td><a href="https://arxiv.org/pdf/1803.09047.pdf"><img class="layered-paper-big" style="height:175px" src="./prosody.png"/></a></td>
+         <td><span style="font-size:14pt">RJ Skerry-Ryan, Eric Battenberg, Ying Xiao, Yuxuan Wang, Daisy Stanton, Joel Shor, Ron J. Weiss, Rob Clark, Rif A. Saurous<br>
+            Towards End-to-End Prosody Transfer for Expressive Speech Synthesis with Tacotron<br>
+         On ArXiv, 2018.</a>
+         </span>
+         </td>
+           </td>
+     </tr>
+   </table>
+ <br>
+
+ <!-- <table align=center width=600px>
+    <tr>
+        <td><span style="font-size:14pt"><center>
+            <a href="">[Bibtex]</a>
+          </center></td>
+    </tr>
+  </table>
+ -->
+<hr>
+
+
+
 
 
   		  <table align=center width=850px>
-	  		  <center><h1>Abstract</h1></center>
+	  		  <center><h1>Abstract - Transformers</h1></center>
 			</table>
-			We present an unsupervised approach that enables us to convert the speech input of any one individual to an output set of potentially-infinitely many speakers, i.e., one can stand in front of a mic and be able to make their favorite celebrity say the same words. Our approach builds on simple autoencoders that project out-of-sample data to the distribution of the training set (motivated by PCA/linear autoencoders). We use an exemplar autoencoder to learn the voice and specific style (emotions and ambiance) of a target speaker. In contrast to existing methods, the proposed approach can be easily extended to an arbitrarily large number of speakers in a very little time using only two-three minutes of audio data from a speaker. We also exhibit the usefulness of our approach for generating video from audio signals and vice-versa.
-		
+			n this paper, we introduce and adapt the multi-head attention mechanism to replace the RNN structures and also the original attention mechanism in Tacotron2. With the help of multi-head self-attention, the hidden states in the encoder and decoder are constructed in parallel, which improves the training efficiency. Meanwhile, any two inputs at different times are connected directly by self-attention mechanism, which solves the long range dependency problem effectively. Using phoneme sequences as input, our Transformer TTS network generates mel spectrograms, followed by a WaveNet vocoder to output the final audio results. Experiments are conducted to test the efficiency and performance of our new network. For the efficiency, our Transformer TTS network can speed up the training about 4.25 times faster compared with Tacotron2. For the performance, rigorous human tests show that our proposed model achieves state-of-the-art performance (outperforms Tacotron2 with a gap of 0.048) and is very close to human quality (4.39 vs 4.44 in MOS). 
 			<br><br>
 			<br>
 			
@@ -265,10 +289,10 @@
 				   <tr>
 					   <!--<td width=300px align=left>-->
 					   <!-- <a href="http://arxiv.org/pdf/1603.08511.pdf"> -->
-					 <td><a href="http://www.cs.cmu.edu/~aayushb/AudioCon/AudioCon.pdf"><img class="layered-paper-big" style="height:175px" src="./images/AudiovisualSynthesis_firstpage.jpg"/></a></td>
-					 <td><span style="font-size:14pt">K. Deng, A. Bansal, D. Ramanan<br>
-					 Unsupervised Any-to-Many Audiovisual Synthesis via Exemplar Autoencoders.<br>
-					 On ArXiv, 2020.</a>
+					 <td><a href="https://arxiv.org/pdf/1809.08895.pdf"><img class="layered-paper-big" style="height:175px" src="./transformer.png"/></a></td>
+					 <td><span style="font-size:14pt">Naihan Li, Shujie Liu, Yanqing Liu, Sheng Zhao, Ming Liu, Ming Zhou<br>
+                        Neural Speech Synthesis with Transformer Network.<br>
+					 On ArXiv, 2019.</a>
 					 </span>
 					 </td>
 					   </td>
@@ -276,62 +300,16 @@
 			   </table>
 			 <br>
 
-			 <table align=center width=600px>
-				<tr>
-					<td><span style="font-size:14pt"><center>
-						<a href="">[Bibtex]</a>
-					  </center></td>
-				</tr>
-			  </table>
-			
+
 		  <hr>
 
-		  <center><h1>Summary Video</h1></center>
 
-		  <br>
-		  <center>
-		  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/6Fjj1fu5QUI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></p>
-		  </center>
-		  <br>
-		  <hr>
 
-		  <center><h1>Demo Video</h1></center>
-
-		  <br>
-		  <center>
-		  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/t80R2zwXR00" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></p>
-		  </center>
-		  <br>
-		  <hr>
 
 		  <center><h1>Voice Conversion</h1></center> <br>
 
 		  <table align=center style="margin:0 0 0 -10%">
-			<!-- <thead>
-			  <tr>
-				<th>Input</th>
-				<th>Alan Kay</th>
-				<th>Alexei Efros</th>
-				<th>Bill Clinton</th>
-				<th>Carl Sagan</th>
-				<th>Claude Shannon</th>
-				<th>David Attengorough</th>
-				<th>Grace Hopper</th>
-				<th>John F Kennedy</th>
-				<th>Margaret Thatcher</th>
-				<th>Martin Luther King</th>
-				<th>Michelle Obama</th>
-				<th>Neil Degrasse Tyson</th>
-				<th>Nelson Mandela</th>
-				<th>Oprah Winfrey</th>
-				<th>Richard Feynman</th>
-				<th>Richard Hamming</th>
-				<th>Stepehn Hawking</th>
-				<th>Takeo Kanade</th>
-				<th>Theresa May</th>
-				<th>Winston Churchill</th>
-			  </tr>
-			</thead> -->
+
 			<tbody>
 			  <thead>
 				  <th colspan="1">Target Speaker <br> & <br> Reference</th>
@@ -366,37 +344,7 @@
 			  <tr></tr><tr></tr><tr></tr><tr></tr>
 			  <tr></tr><tr></tr><tr></tr><tr></tr>
 			  <tr></tr><tr></tr><tr></tr><tr></tr>
-			  <!-- <tr>
-				<th>Alan Kay <br>
-					<audio controls="">
-							<source src="./audios/reference/AlanKay_0561 (1).wav" type="audio/wav">
-							Your browser does not support the audio element.
-					</audio>
-				</th>	
-				<td>
-				<audio controls="">
-					<source src="./audios/trump01/alan.wav" type="audio/wav">
-					Your browser does not support the audio element.
-					</audio>
-					</td>
-				</tr>
-				-->
-				<!-- <tr>
-				<th rowspan="16">Target Speaker <br> & <br> Reference</th>
-				</tr> -->
-				<!-- <th>Alexei Efros <br>
-					<audio controls="">
-							<source src="./audios/reference/AlexeiEfros_0002.wav" type="audio/wav">
-							Your browser does not support the audio element.
-					</audio>
-				</th>		
-				<td>
-				<audio controls="">
-					<source src="./audios/trump01/alexei.wav" type="audio/wav">
-					Your browser does not support the audio element.
-					</audio>
-					</td>
-				</tr> -->
+	
 
 				<tr>
 				<th>Barack Obama <br>
@@ -507,99 +455,7 @@
 				</td>
 				</tr>
 
-				<!-- <tr>
-				<th>David Attengorough <br>
-					<audio controls="">
-							<source src="./audios/reference/DavidAttenborough_0695.wav" type="audio/wav">
-							Your browser does not support the audio element.
-					</audio>
-				</th>		
-				<td>
-				<audio controls="">
-					<source src="./audios/trump01/david.wav" type="audio/wav">
-					Your browser does not support the audio element.
-					</audio>
-					</td>
-				</tr>
-
-				<tr>
-				<th>John F Kennedy <br>
-					<audio controls="">
-							<source src="./audios/reference/JohnFKennedy_0567.wav" type="audio/wav">
-							Your browser does not support the audio element.
-					</audio>
-				</th>	
-				<td>
-				<audio controls="">
-					<source src="./audios/trump01/john.wav" type="audio/wav">
-					Your browser does not support the audio element.
-					</audio>
-					</td>
-				</tr> -->
-
-				<!-- <tr>
-				<th>Martin Luther King <br>
-					<audio controls="">
-							<source src="./audios/reference/MartinLutherKing_0094.wav" type="audio/wav">
-							Your browser does not support the audio element.
-					</audio>
-				</th>	
-				<td>
-				<audio controls="">
-					<source src="./audios/trump01/martin.wav" type="audio/wav">
-					Your browser does not support the audio element.
-					</audio>
-					</td>
-				<td>
-					<audio controls="">
-						<source src="./audios/sample02/MLK_80000.wav" type="audio/wav">
-						Your browser does not support the audio element.
-						</audio>
-				</td>
-				</tr> -->
-
-				<tr>
-				<th>Michelle Obama <br>
-					<audio controls="">
-							<source src="./audios/reference/MichelleObama_0004.wav" type="audio/wav">
-							Your browser does not support the audio element.
-					</audio>
-				</th>	
-				<td>
-				<audio controls="">
-					<source src="./audios/trump01/michelle.wav" type="audio/wav">
-					Your browser does not support the audio element.
-					</audio>
-				</td>
-				<td>
-					<audio controls="">
-						<source src="./audios/sample02/michelleobama_108000.wav" type="audio/wav">
-						Your browser does not support the audio element.
-						</audio>
-				</td>
-				<td>
-					<audio controls="">
-						<source src="./audios/MLK03/michelleobama_108000.wav" type="audio/wav">
-						Your browser does not support the audio element.
-						</audio>
-				</td>
-				</tr>
-
-				<!-- <tr>
-				<th>Neil Degrasse <br>
-					<audio controls="">
-							<source src="./audios/reference/NeilDegrasseTyson_2073.wav" type="audio/wav">
-							Your browser does not support the audio element.
-					</audio>
-				</th>		
-				<td>
-				<audio controls="">
-					<source src="./audios/trump01/neil.wav" type="audio/wav">
-					Your browser does not support the audio element.
-					</audio>
-					</td>
-				</tr> -->
-
+				
 				<tr>
 				<th>Nelson Mandela <br>
 					<audio controls="">
@@ -770,94 +626,7 @@
 
 		  We show audiovisual results based on audio input of random speakers. We use the publicly available videos of various public figures for the experiement, especially the <a href="http://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html">VoxCeleb2 dataset</a>. <br><br><br>
 
-			<!-- <table align=center>
-				<thead>
-					<tr>
-						<th>Input</th>
-						<th colspan="3">Output</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th>
-						<audio controls="">
-							<source src="./audios/trump01/input_trump.wav" type="audio/wav">
-							Your browser does not support the audio element.
-								</audio>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/01_obama.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/01_churchill.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/01_vox1106.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-					</tr>
-					<tr>
-						<th>
-						<audio controls="">
-							<source src="videos/input/input_4_MartinLutherKing.wav" type="audio/wav">
-							Your browser does not support the audio element.
-								</audio>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/02_obama.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/02_churchill.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/02_vox1106.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-					</tr>
-					<tr>
-						<th>
-						<audio controls="">
-							<source src="videos/input/p364_001.wav" type="audio/wav">
-							Your browser does not support the audio element.
-								</audio>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/03_obama.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/03_churchill.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/03_vox1106.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-					</tr>
-				</tbody>
-			</table> -->
+			
 
 			<table align=center>
 				<thead>
@@ -958,45 +727,10 @@
 
 		  <hr>	
 
-		  <center><h1>Audio-to-Video Synthesis</h1></center>
-
-		  If we constrain the input within the training speaker even at inference time, the network then becomes capable of audio-to-video synthesis for a specific speaker. This application is useful for restoring the video records for some famous historical celebrities.
-		  <br><br>
-		  <center>
-		  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/cjXyJ3LW5Go" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></p>
-		  </center>
-
-		  <center><br><span style="font-size:14px"><i>We take Winston Churchill’s famous “end of beginning” speech as example. We only have the recordings of speech yet without video. However, with this technology, we can restore Churchill’s talking head video based on the speech audio.</i><br><br><br>
-		  </span></center>
-
-		  <hr>	
-<!-- 
-		  <center><h1>Audio-Video Retargeting</h1></center>
-
-		  We can also combine our voice-conversion network with video retargeting technology, such as Recycle-GAN. Different from our Audiovisual Synthesis, this time we take the source speaker’s video as input too. In this way, we drive both the speech and the expressions of the target speaker according to the source input.
-		  <br><br>
-		  <center>
-		  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/fhiVXWNYlGE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></p>
-		  </center>
-
-		  <center><br><span style="font-size:14px"><i>Given an audiovisual speech from Obama, we use Recycle-GAN to generate Trump's video and use our voice-conversion network to generate Trump's audio.</i><br><br><br>
-		  </span></center>
-
-		  <hr>
--->
+		 
 		  <br>
 		  	
-  		  <table align=center width=1100px>
-  			  <tr>
-  	              <td width=400px>
-  					<left>
-	  		  <center><h1>Acknowledgements</h1></center>
-	  		  We thank the authors of <a href="https://github.com/auspicious3000/autovc">AutoVC</a> for their related work. We thank the larger community for collecting and uploading the videos on web. We thank members of Deva's Lab for helpful discussions. Finally, we thank the authors of <a href="http://richzhang.github.io/colorization/">Colorful Image Colorization</a> for this webpage design.
 
-			</left>
-		</td>
-			 </tr>
-		</table>
 
 		<br><br>
               
