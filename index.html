@@ -413,10 +413,18 @@
 
 			<tbody id="myTbody">
 				<thead>
-					<th colspan="1"><h3>Reference Text</h3></th>
-					<th colspan="1"><h3>Original Video</h3></th>
-					<th colspan="1"><h3>Deep Voice 3 - Male audio</h3></th>
-					<th colspan="1"><h3>Lipsyncnet Video</h3></th>
+					<th colspan="1">
+						<h3>Reference Text</h3>
+					</th>
+					<th colspan="1">
+						<h3>Original Video</h3>
+					</th>
+					<th colspan="1">
+						<h3>Deep Voice 3 - Male audio</h3>
+					</th>
+					<th colspan="1">
+						<h3>Lipsyncnet Video</h3>
+					</th>
 				</thead>
 
 			</tbody>
@@ -427,9 +435,27 @@
 			<h1>Observations</h1>
 		</center> <br>
 		<ul>
-			<li>Words pronunciation seems correct.</li>
-			<li>Adding prosody/style and pauses in between could make speech more natural</li>
-			<li>Model seems to struggle with sentences involving mathematics/equations</li>
+			<li>Most of the word pronunciation seems correct. But there is problem with homographs(same spelling
+				different pronunciation)
+				<ul>
+					<li>
+						<audio controls>
+							<source src='./audios/homographs/0_lead.wav' type="audio/wav"> </audio>
+						<audio controls>
+							<source src='./audios/homographs/1_lead.wav' type="audio/wav"> </audio>
+					</li>
+					<li>
+						<audio controls>
+							<source src='./audios/homographs/0_lives.wav' type="audio/wav"> </audio>
+						<audio controls>
+							<source src='./audios/homographs/2_lives.wav' type="audio/wav"> </audio>
+						<audio controls>
+							<source src='./audios/homographs/3_lives.wav' type="audio/wav"> </audio>
+					</li>
+				</ul>
+			</li>
+			<li>The stress, attention on certain words in the original speech are observed in generated output but not to the same extent as original audio</li>
+			<li>Model seems to struggle with sentences involving mathematics/equations and variables</li>
 			<li>Lipsyncnet can handle a video without a face</li>
 			<li>Lips in the video are in sync with the speech</li>
 		</ul>
