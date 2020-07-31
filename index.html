@@ -725,14 +725,13 @@
 				if (rawFile.readyState === 4) {
 					if (rawFile.status === 200 || rawFile.status == 0) {
 						var allText = rawFile.responseText;
-						alert(allText);
+						console.log(allText);
 					}
 				}
 			}
 			// rawFile.send(null);
 		}
-		var a = readTextFile('./hello.txt');
-		console.log(a)
+		readTextFile('./hello.txt');
 	</script>
 </body>
 
