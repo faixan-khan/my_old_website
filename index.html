@@ -190,11 +190,19 @@
 
 <body>
 	<div class="tab">
-		<button class="tablinks" onclick="func(event, 'Approaches')" id="defaultOpen">Approaches</button>
+		<button class="tablinks" onclick="func(event, 'About')" id="defaultOpen">About</button>
 		<button class="tablinks" onclick="func(event, 'Results')">Results</button>
 		<button class="tablinks" onclick="func(event, 'Observations')">Observations</button>
 	</div>
-	<div id="Approaches" class="tabcontent">
+	<div id="About" class="tabcontent">
+		<br>
+
+		<center>
+			<h1>About</h1>
+
+			Project page for lip synced Educational Lecture Videos converted from American/British English to Indian English
+		</center>
+
 		<br>
 		<center>
 			<h1>Approaches</h1>
@@ -202,25 +210,25 @@
 				<tr>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:20px"><a href="https://arxiv.org/abs/1710.07654">Deep Voice
+							<span style="font-size:20px"><a href="#rp1">Deep Voice
 									3</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:20px"><a href="https://arxiv.org/abs/1710.08969">Attention Based
+							<span style="font-size:20px"><a href="#rp2">Attention Based
 									TTS</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:20px"><a href="https://arxiv.org/abs/1803.09047">Prosody
+							<span style="font-size:20px"><a href="#rp3">Prosody
 									Transfer</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:20px"><a href="https://arxiv.org/abs/1809.08895">Transformers
+							<span style="font-size:20px"><a href="#rp4">Transformers
 								</a></span>
 						</center>
 					</td>
@@ -229,34 +237,11 @@
 		</center>
 
 		<br>
-		<table align=center width=850px>
-			<tr>
-				<td width=400px>
-					<center>
-						<a href="./images/fig_teaser.jpg"><img class="rounded"
-								src="https://miro.medium.com/max/3330/1*7HOERatJ83E1KkKr1SVAug.png"
-								height="300px"></img>
-							</href></a><br>
-					</center>
-				</td>
-			</tr>
-			<td width=400px>
-				<center>
-					<span style="font-size:14px"><i> The project is to convert textual input of any individual to an
-							output
-							of a potential individual along with the alignment of audio between the input and the
-							output..</i>
-				</center>
-			</td>
-
-		</table>
-
-		<br>
 		<hr>
 
 		<table align=center width=850px>
 			<center>
-				<h1>Abstract - Deep Voice 3</h1>
+				<h1 id="rp1">Abstract - Deep Voice 3</h1>
 			</center>
 		</table>
 		We present Deep Voice 3, a fully-convolutional attention-based neural text-to-speech (TTS) system. Deep Voice 3
@@ -291,7 +276,7 @@
 
 		<table align=center width=850px>
 			<center>
-				<h1>Abstract - Attention-Based TTS</h1>
+				<h1 id="rp2">Abstract - Attention-Based TTS</h1>
 			</center>
 		</table>
 		This paper describes a novel text-to-speech (TTS) technique based on deep convolutional neural networks (CNN),
@@ -330,7 +315,7 @@
 
 		<table align=center width=850px>
 			<center>
-				<h1>Abstract- Prosody Transfer</h1>
+				<h1 id="rp3">Abstract- Prosody Transfer</h1>
 			</center>
 		</table>
 		We present an extension to the Tacotron speech synthesis architecture that learns a latent embedding space of
@@ -365,7 +350,7 @@
 
 		<table align=center width=850px>
 			<center>
-				<h1>Abstract - Transformers</h1>
+				<h1 id="rp4">Abstract - Transformers</h1>
 			</center>
 		</table>
 		n this paper, we introduce and adapt the multi-head attention mechanism to replace the RNN structures and also
@@ -429,15 +414,46 @@
 
 			</tbody>
 		</table>
+		<br><br>
+		<center>
+			<h2>Full video</h2>
+		</center>
+		<table align=center style="width: 100%;" border="1" border-collapse>
+			<tbody>
+				<tr>
+					<td style="text-align:center">
+						<iframe src="https://drive.google.com/file/d/1tgTxKK1wzN4no85ZQsJIGVUYpJwBGumM/preview"></iframe>
+					</td>
+					<td style="text-align:center">
+						<iframe src="https://drive.google.com/file/d/1TlC6EKJUpEuOv57igLV75Srooz4RhudP/preview"></iframe>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">
+						Combined multiple short videos made from each sentence
+					</td>
+					<td style="text-align:center">
+						Combined full audio and video
+					</td>
+				</tr>
+			</tbody>
+		</table>		
 	</div>
 	<div id="Observations" class="tabcontent">
 		<center>
 			<h1>Observations</h1>
 		</center> <br>
+
+		<h2>Pros</h2>
 		<ul>
-			<li>Most of the word pronunciation seems correct. But there is problem with homographs(same spelling
-				different pronunciation)
+			<li>Lipsyncnet can handle a video without a face</li>
+			<li>Lips in the video are in sync with the speech</li>
+		</ul>
+		<h2>Cons/Things to work upon</h2>
+		<ul>
+			<li>Most of the word pronunciation seems correct. But there is problem with homographs(same spelling different pronunciation)
 				<ul>
+					<li>Below are the examples of two homographs - lead(/LEED/ and \LED) and lives(/lɪv/ and /laɪvz/) :</li>
 					<li>
 						<audio controls>
 							<source src='./audios/homographs/0_lead.wav' type="audio/wav"> </audio>
@@ -456,8 +472,16 @@
 			</li>
 			<li>The stress, attention on certain words in the original speech are observed in generated output but not to the same extent as original audio</li>
 			<li>Model seems to struggle with sentences involving mathematics/equations and variables</li>
-			<li>Lipsyncnet can handle a video without a face</li>
-			<li>Lips in the video are in sync with the speech</li>
+		</ul>
+		<br>
+		<br>
+		<center>
+			<h2>How far are we from translating a full Video Lecture?</h2>
+		</center>
+		<ul>
+			<li>Currently we do not have a good ASR system especially for British English.</li>
+			<li>Difficult to split Lecture videos into smaller chunks. Currently video broken down into uniform segments of length 5 sec.</li>
+			<li>Once we have video splits and corresponding transcript ready, it can be translated to Indian english in time less than length of the video.</li>
 		</ul>
 	</div>
 	<script>
