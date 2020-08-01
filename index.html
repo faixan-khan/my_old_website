@@ -200,7 +200,8 @@
 		<center>
 			<h1>About</h1>
 
-			Project page for lip synced Educational Lecture Videos converted from American/British English to Indian English
+			Project page for lip synced Educational Lecture Videos converted from American/British English to Indian
+			English
 		</center>
 
 		<br>
@@ -391,6 +392,32 @@
 	</div>
 	<div id="Results" class="tabcontent">
 		<center>
+			<h2>Full video</h2>
+		</center>
+		<table align=center style="width: 100%;" border="1" border-collapse>
+			<tbody>
+				<tr>
+					<td style="text-align:center">
+						<iframe
+							src="https://drive.google.com/file/d/1tgTxKK1wzN4no85ZQsJIGVUYpJwBGumM/preview"></iframe>
+					</td>
+					<td style="text-align:center">
+						<iframe
+							src="https://drive.google.com/file/d/1TlC6EKJUpEuOv57igLV75Srooz4RhudP/preview"></iframe>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:center">
+						Combined multiple short videos made from each sentence
+					</td>
+					<td style="text-align:center">
+						Combined full audio and video
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br><br>
+		<center>
 			<h1>M4ML - Multivariate Calculus - 5.2 Gradient Descent</h1>
 		</center> <br>
 
@@ -414,30 +441,6 @@
 
 			</tbody>
 		</table>
-		<br><br>
-		<center>
-			<h2>Full video</h2>
-		</center>
-		<table align=center style="width: 100%;" border="1" border-collapse>
-			<tbody>
-				<tr>
-					<td style="text-align:center">
-						<iframe src="https://drive.google.com/file/d/1tgTxKK1wzN4no85ZQsJIGVUYpJwBGumM/preview"></iframe>
-					</td>
-					<td style="text-align:center">
-						<iframe src="https://drive.google.com/file/d/1TlC6EKJUpEuOv57igLV75Srooz4RhudP/preview"></iframe>
-					</td>
-				</tr>
-				<tr>
-					<td style="text-align:center">
-						Combined multiple short videos made from each sentence
-					</td>
-					<td style="text-align:center">
-						Combined full audio and video
-					</td>
-				</tr>
-			</tbody>
-		</table>		
 	</div>
 	<div id="Observations" class="tabcontent">
 		<center>
@@ -451,9 +454,11 @@
 		</ul>
 		<h2>Cons/Things to work upon</h2>
 		<ul>
-			<li>Most of the word pronunciation seems correct. But there is problem with homographs(same spelling different pronunciation)
+			<li>Pronunciation needs to be imporved. But there is problem with homographs(same spelling different
+				pronunciation)
 				<ul>
-					<li>Below are the examples of two homographs - lead(/LEED/ and \LED) and lives(/lɪv/ and /laɪvz/) :</li>
+					<li>Below are the examples of two homographs - lead(/LEED/ and \LED) and lives(/lɪv/ and /laɪvz/) :
+					</li>
 					<li>
 						<audio controls>
 							<source src='./audios/homographs/0_lead.wav' type="audio/wav"> </audio>
@@ -470,8 +475,12 @@
 					</li>
 				</ul>
 			</li>
-			<li>The stress, attention on certain words in the original speech are observed in generated output but not to the same extent as original audio</li>
+			<li>The stress, attention on certain words in the original speech are observed in generated output but not
+				to the same extent as original audio</li>
 			<li>Model seems to struggle with sentences involving mathematics/equations and variables</li>
+			<li>Voice quality needs to be imporved.</li>
+			<li>Few jerks present in the video. Frame interpolation while processing required to make it smoother.</li>
+			<li>Content sync lost in processing full audio and video.</li>
 		</ul>
 		<br>
 		<br>
@@ -480,8 +489,10 @@
 		</center>
 		<ul>
 			<li>Currently we do not have a good ASR system especially for British English.</li>
-			<li>Difficult to split Lecture videos into smaller chunks. Currently video broken down into uniform segments of length 5 sec.</li>
-			<li>Once we have video splits and corresponding transcript ready, it can be translated to Indian english in time less than length of the video.</li>
+			<li>Difficult to split Lecture videos into smaller chunks. Currently video broken down into uniform segments
+				of length 5 sec.</li>
+			<li>Once we have video splits and corresponding transcript ready, it can be translated to Indian english in
+				time less than length of the video.</li>
 		</ul>
 	</div>
 	<script>
