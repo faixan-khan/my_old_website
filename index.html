@@ -473,6 +473,9 @@
 					<th colspan="1">
 						<h3>Emma Watson</h3>
 					</th>
+					<th colspan="1">
+						<h3>Anger</h3>
+					</th>
 				</thead>
 			</tbody>
 			<tbody><th></th></tbody>
@@ -499,6 +502,10 @@
 					<th colspan="1">
 						<audio controls style="width: 150px;">
 							<source src='./audios/prosody/emma.mp3' type="audio/wav"> </audio>
+					</th>
+					<th colspan="1">
+						<audio controls style="width: 150px;">
+							<source src='./audios/prosody/anger.mp3' type="audio/wav"> </audio>
 					</th>
 				</thead>
 
@@ -602,7 +609,7 @@
 			return s
 		}
 
-		function insert1(sen, v1, a1, a2, a3, a4, a5) {
+		function insert1(sen, v1, a1, a2, a3, a4, a5, a6) {
 			s = `<tr>
 					<th colspan='2' style="text-align:center width: 350px"> ${sen} </th>
 					<td style="text-align:center">
@@ -638,6 +645,12 @@
 					<td style="text-align:center">
 						<audio controls="" style="width: 150px";>
 							<source src=${a5} type="audio/wav">
+							Your browser does not support the audio element.
+						</audio>
+					</td>
+					<td style="text-align:center">
+						<audio controls="" style="width: 150px";>
+							<source src=${a6} type="audio/wav">
 							Your browser does not support the audio element.
 						</audio>
 					</td>
@@ -697,7 +710,8 @@
 														"./audios/prosody/eval1/dv3_f-0.wav",
 														"./audios/prosody/eval3/a1.wav",
 														"./audios/prosody/eval4/dl0.wav",
-														"./audios/prosody/eval5/emma0.wav"
+														"./audios/prosody/eval5/emma0.wav",
+														"./audios/prosody/eval7/anger0.wav"
 														));
 		table2.insertAdjacentHTML("beforeend", insert1("and as we shall see, in one of our lectures, entitled English in India,",
 														"./vids/nptel/np2.mp4",
@@ -705,7 +719,8 @@
 														"./audios/prosody/eval1/dv3_f-1.wav",
 														"./audios/prosody/eval3/a2.wav",
 														"./audios/prosody/eval4/dl1.wav",
-														"./audios/prosody/eval5/emma1.wav"
+														"./audios/prosody/eval5/emma1.wav",
+														"./audios/prosody/eval7/anger1.wav"
 														));
 		table2.insertAdjacentHTML("beforeend", insert1("you would be surprised that as if you do not know it already",
 														"./vids/nptel/np3.mp4",
@@ -713,7 +728,8 @@
 														"./audios/prosody/eval1/dv3_f-2.wav",
 														"./audios/prosody/eval3/a3.wav",
 														"./audios/prosody/eval4/dl2.wav",
-														"./audios/prosody/eval5/emma2.wav"
+														"./audios/prosody/eval5/emma2.wav",
+														"./audios/prosody/eval7/anger2.wav"
 														));
 		table2.insertAdjacentHTML("beforeend", insert1("that study of English Literature as a discipline in colleges and universities, did not begin in the mother country, England, but in India.",
 														"./vids/nptel/np4.mp4",
@@ -721,7 +737,8 @@
 														"./audios/prosody/eval1/dv3_f-3.wav",
 														"./audios/prosody/eval3/a4.wav",
 														"./audios/prosody/eval4/dl3.wav",
-														"./audios/prosody/eval5/emma3.wav"
+														"./audios/prosody/eval5/emma3.wav",
+														"./audios/prosody/eval7/anger3.wav"
 														));
 
 	</script>
