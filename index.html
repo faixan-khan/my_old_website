@@ -186,12 +186,18 @@
 	table {
 		border-collapse: collapse;
 	}
+
+	#tableMyp {
+		width: 1600px;
+		margin-left:initial;
+	}
 </style>
 
 <body>
 	<div class="tab">
-		<button class="tablinks" onclick="func(event, 'About')" id="defaultOpen">About</button>
+		<button class="tablinks" onclick="func(event, 'About')">About</button>
 		<button class="tablinks" onclick="func(event, 'Results')">Results</button>
+		<button class="tablinks" onclick="func(event, 'Prosody')" id="defaultOpen">Prosody Transfer</button>
 		<button class="tablinks" onclick="func(event, 'Observations')">Observations</button>
 	</div>
 	<div id="About" class="tabcontent">
@@ -443,6 +449,63 @@
 			</tbody>
 		</table>
 	</div>
+
+	<div id="Prosody" class="tabcontent" style="margin-left: 0px;">
+		<table id="tableMyp" border="1" border-collapse>
+
+			<tbody>
+				<thead>
+					<th colspan="3">
+						<h3>Reference Audio</h3>
+					</th>
+					<th colspan="1">
+						<h3>Original Audios</h3>
+					</th>
+					<th colspan="1">
+						<h3>Deep voice 3 female</h3>
+					</th>
+					<th colspan="1">
+						<h3>Khan Academy</h3>
+					</th>
+					<th colspan="1">
+						<h3>David Silver</h3>
+					</th>
+					<th colspan="1">
+						<h3>Emma Watson</h3>
+					</th>
+				</thead>
+			</tbody>
+			<tbody><th></th></tbody>
+			<tbody id="myTbodyp">
+					<th colspan="2">
+						<h3>Reference Text</h3>
+					</th>
+					<th colspan="1">
+						<h3>Original Videos</h3>
+					</th>
+					<th></th>
+					<th colspan="1">
+						<audio controls style="width: 150px;">
+							<source src='./audios/prosody/dv3_f.wav' type="audio/wav"> </audio>
+					</th>
+					<th colspan="1">
+						<audio controls style="width: 150px;">
+							<source src='./audios/prosody/kha.wav' type="audio/wav"> </audio>
+					</th>
+					<th colspan="1">
+						<audio controls style="width: 150px;">
+							<source src='./audios/prosody/dl.mp3' type="audio/wav"> </audio>
+					</th>
+					<th colspan="1">
+						<audio controls style="width: 150px;">
+							<source src='./audios/prosody/emma.mp3' type="audio/wav"> </audio>
+					</th>
+				</thead>
+
+			</tbody>
+		</table>
+	</div>
+
 	<div id="Observations" class="tabcontent">
 		<center>
 			<h1>Observations</h1>
@@ -538,18 +601,129 @@
 				</tr>`
 			return s
 		}
-		var table = document.getElementById("myTbody");
-		table.insertAdjacentHTML("beforeend", insert("ok so now we've looked at the newton-raphson method which uses the gradient", "./vids/org/mmgd_00:00:2.00_00:00:7.00.mp4", "./audios/mmgd_dv3_m/0_checkpoint_step002010000.wav", "./vids/out/result_voice_mmgd_00:00:2.00_00:00:7.00.mp4"));
-		table.insertAdjacentHTML("beforeend", insert("to iteratively solve a 1d function of X say now we'll", "./vids/org/mmgd_00:00:7.00_00:00:12.00.mp4", "./audios/mmgd_dv3_m/1_checkpoint_step002010000.wav", "./vids/out/result_voice_mmgd_00:00:7.00_00:00:12.00.mp4"));
-		table.insertAdjacentHTML("beforeend", insert("generalize that to figure out how to do something similar with a multi dimensional function at", "./vids/org/mmgd_00:00:12.00_00:00:17.00.mp4", "./audios/mmgd_dv3_m/2_checkpoint_step002010000.wav", "./vids/out/result_voice_mmgd_00:00:12.00_00:00:17.00.mp4"));
-		table.insertAdjacentHTML("beforeend", insert("function of multiple variables and how to use the gradient to find the maxima and minima of", "./vids/org/mmgd_00:00:17.00_00:00:22.00.mp4", "./audios/mmgd_dv3_m/3_checkpoint_step002010000.wav", "./vids/out/result_voice_mmgd_00:00:17.00_00:00:22.00.mp4"));
-		table.insertAdjacentHTML("beforeend", insert("such a function later on this will let us optimize find the best fit for the", "./vids/org/mmgd_00:00:22.00_00:00:27.00.mp4", "./audios/mmgd_dv3_m/4_checkpoint_step002010000.wav", "./vids/out/result_voice_mmgd_00:00:22.00_00:00:27.00.mp4"));
-		table.insertAdjacentHTML("beforeend", insert("parameters of a function that we're trying to fit say I've got a function like f", "./vids/org/mmgd_00:00:27.00_00:00:32.00.mp4", "./audios/mmgd_dv3_m/5_checkpoint_step002010000.wav", "./vids/out/result_voice_mmgd_00:00:27.00_00:00:32.00.mp4"));
-		table.insertAdjacentHTML("beforeend", insert("equals x squared Y here this function looks like this and what I've got", "./vids/org/mmgd_00:00:32.00_00:00:37.00.mp4", "./audios/mmgd_dv3_m/6_checkpoint_step002010000.wav", "./vids/out/result_voice_mmgd_00:00:32.00_00:00:37.00.mp4"));
-		table.insertAdjacentHTML("beforeend", insert("here is a function that gets big and positive when X is big", "./vids/org/mmgd_00:00:37.00_00:00:42.00.mp4", "./audios/mmgd_dv3_m/7_checkpoint_step002010000.wav", "./vids/out/result_voice_mmgd_00:00:37.00_00:00:42.00.mp4"));
-		table.insertAdjacentHTML("beforeend", insert("f of X Y is equal to x", "./vids/org/mmgd_00:01:37.00_00:01:42.00.mp4", "./audios/mmgd_dv3_m/19_checkpoint_step002010000.wav", "./vids/out/result_voice_mmgd_00:01:37.00_00:01:42.00.mp4"));
-		table.insertAdjacentHTML("beforeend", insert("squared Y and so DF DX", "./vids/org/mmgd_00:01:42.00_00:01:47.00.mp4", "./audios/mmgd_dv3_m/20_checkpoint_step002010000.wav", "./vids/out/result_voice_mmgd_00:01:42.00_00:01:47.00.mp4"));
-		table.insertAdjacentHTML("beforeend", insert("90 degrees to the contour line and think about the way it's defined is it up or down", "./vids/org/mmgd_00:06:12.00_00:06:17.00.mp4", "./audios/mmgd_dv3_m/74_checkpoint_step002010000.wav", "./vids/out/result_voice_mmgd_00:06:12.00_00:06:17.00.mp4"));
+
+		function insert1(sen, v1, a1, a2, a3, a4, a5) {
+			s = `<tr>
+					<th colspan='2' style="text-align:center width: 350px"> ${sen} </th>
+					<td style="text-align:center">
+						<video controls width="240" height="160">
+							<source src=${v1} type="video/mp4">
+							Your browser does not support the video element.
+						</video>
+					</td>
+					<td colspan='1' style="text-align:center">
+						<audio controls="" style="width: 150px";>
+							<source src=${a1} type="audio/wav">
+							Your browser does not support the audio element.
+						</audio>
+					</td>
+					<td style="text-align:center">
+						<audio controls="" style="width: 150px";>
+							<source src=${a2} type="audio/wav">
+							Your browser does not support the audio element.
+						</audio>
+					</td>
+					<td style="text-align:center">
+						<audio controls="" style="width: 150px";>
+							<source src=${a3} type="audio/wav">
+							Your browser does not support the audio element.
+						</audio>
+					</td>
+					<td style="text-align:center">
+						<audio controls="" style="width: 150px";>
+							<source src=${a4} type="audio/wav">
+							Your browser does not support the audio element.
+						</audio>
+					</td>
+					<td style="text-align:center">
+						<audio controls="" style="width: 150px";>
+							<source src=${a5} type="audio/wav">
+							Your browser does not support the audio element.
+						</audio>
+					</td>
+				</tr>`
+			return s
+		}
+		var table1 = document.getElementById("myTbody");
+		table1.insertAdjacentHTML("beforeend", insert("ok so now we've looked at the newton-raphson method which uses the gradient",
+														"./vids/org/mmgd_00:00:2.00_00:00:7.00.mp4",
+														"./audios/mmgd_dv3_m/0_checkpoint_step002010000.wav",
+														"./vids/out/result_voice_mmgd_00:00:2.00_00:00:7.00.mp4"));
+		table1.insertAdjacentHTML("beforeend", insert("to iteratively solve a 1d function of X say now we'll",
+														"./vids/org/mmgd_00:00:7.00_00:00:12.00.mp4",
+														"./audios/mmgd_dv3_m/1_checkpoint_step002010000.wav",
+														"./vids/out/result_voice_mmgd_00:00:7.00_00:00:12.00.mp4"));
+		table1.insertAdjacentHTML("beforeend", insert("generalize that to figure out how to do something similar with a multi dimensional function at",
+														"./vids/org/mmgd_00:00:12.00_00:00:17.00.mp4",
+														"./audios/mmgd_dv3_m/2_checkpoint_step002010000.wav",
+														"./vids/out/result_voice_mmgd_00:00:12.00_00:00:17.00.mp4"));
+		table1.insertAdjacentHTML("beforeend", insert("function of multiple variables and how to use the gradient to find the maxima and minima of",
+														"./vids/org/mmgd_00:00:17.00_00:00:22.00.mp4",
+														"./audios/mmgd_dv3_m/3_checkpoint_step002010000.wav",
+														"./vids/out/result_voice_mmgd_00:00:17.00_00:00:22.00.mp4"));
+		table1.insertAdjacentHTML("beforeend", insert("such a function later on this will let us optimize find the best fit for the",
+														"./vids/org/mmgd_00:00:22.00_00:00:27.00.mp4",
+														"./audios/mmgd_dv3_m/4_checkpoint_step002010000.wav",
+														"./vids/out/result_voice_mmgd_00:00:22.00_00:00:27.00.mp4"));
+		table1.insertAdjacentHTML("beforeend", insert("parameters of a function that we're trying to fit say I've got a function like f",
+														"./vids/org/mmgd_00:00:27.00_00:00:32.00.mp4",
+														"./audios/mmgd_dv3_m/5_checkpoint_step002010000.wav",
+														"./vids/out/result_voice_mmgd_00:00:27.00_00:00:32.00.mp4"));
+		table1.insertAdjacentHTML("beforeend", insert("equals x squared Y here this function looks like this and what I've got",
+														"./vids/org/mmgd_00:00:32.00_00:00:37.00.mp4",
+														"./audios/mmgd_dv3_m/6_checkpoint_step002010000.wav",
+														"./vids/out/result_voice_mmgd_00:00:32.00_00:00:37.00.mp4"));
+		table1.insertAdjacentHTML("beforeend", insert("here is a function that gets big and positive when X is big",
+														"./vids/org/mmgd_00:00:37.00_00:00:42.00.mp4",
+														"./audios/mmgd_dv3_m/7_checkpoint_step002010000.wav",
+														"./vids/out/result_voice_mmgd_00:00:37.00_00:00:42.00.mp4"));
+		table1.insertAdjacentHTML("beforeend", insert("f of X Y is equal to x",
+														"./vids/org/mmgd_00:01:37.00_00:01:42.00.mp4",
+														"./audios/mmgd_dv3_m/19_checkpoint_step002010000.wav",
+														"./vids/out/result_voice_mmgd_00:01:37.00_00:01:42.00.mp4"));
+		table1.insertAdjacentHTML("beforeend", insert("squared Y and so DF DX",
+														"./vids/org/mmgd_00:01:42.00_00:01:47.00.mp4",
+														"./audios/mmgd_dv3_m/20_checkpoint_step002010000.wav",
+														"./vids/out/result_voice_mmgd_00:01:42.00_00:01:47.00.mp4"));
+		table1.insertAdjacentHTML("beforeend", insert("90 degrees to the contour line and think about the way it's defined is it up or down",
+														"./vids/org/mmgd_00:06:12.00_00:06:17.00.mp4",
+														"./audios/mmgd_dv3_m/74_checkpoint_step002010000.wav",
+														"./vids/out/result_voice_mmgd_00:06:12.00_00:06:17.00.mp4"));
+	
+		var table2 = document.getElementById("myTbodyp");
+		table2.insertAdjacentHTML("beforeend", insert1("The study of English as a discipline has had a very long history",
+														"./vids/nptel/np1.mp4",
+														"./audios/prosody/eval2/np1.wav",
+														"./audios/prosody/eval1/dv3_f-0.wav",
+														"./audios/prosody/eval3/a1.wav",
+														"./audios/prosody/eval4/dl0.wav",
+														"./audios/prosody/eval5/emma0.wav"
+														));
+		table2.insertAdjacentHTML("beforeend", insert1("and as we shall see, in one of our lectures, entitled English in India,",
+														"./vids/nptel/np2.mp4",
+														"./audios/prosody/eval2/np2.wav",
+														"./audios/prosody/eval1/dv3_f-1.wav",
+														"./audios/prosody/eval3/a2.wav",
+														"./audios/prosody/eval4/dl1.wav",
+														"./audios/prosody/eval5/emma1.wav"
+														));
+		table2.insertAdjacentHTML("beforeend", insert1("you would be surprised that as if you do not know it already",
+														"./vids/nptel/np3.mp4",
+														"./audios/prosody/eval2/np3.wav",
+														"./audios/prosody/eval1/dv3_f-2.wav",
+														"./audios/prosody/eval3/a3.wav",
+														"./audios/prosody/eval4/dl2.wav",
+														"./audios/prosody/eval5/emma2.wav"
+														));
+		table2.insertAdjacentHTML("beforeend", insert1("that study of English Literature as a discipline in colleges and universities, did not begin in the mother country, England, but in India.",
+														"./vids/nptel/np4.mp4",
+														"./audios/prosody/eval2/np4.wav",
+														"./audios/prosody/eval1/dv3_f-3.wav",
+														"./audios/prosody/eval3/a4.wav",
+														"./audios/prosody/eval4/dl3.wav",
+														"./audios/prosody/eval5/emma3.wav"
+														));
+
 	</script>
 </body>
 
