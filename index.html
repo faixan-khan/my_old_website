@@ -461,7 +461,7 @@
 			<tbody>
 				<thead>
 					<th colspan="3">
-						<h3>Reference Audio</h3>
+						<h1>Reference Audios &#8594;</h1>
 					</th>
 					<th colspan="1">
 						<h3>Original Audios</h3>
@@ -482,23 +482,18 @@
 			</tbody>
 
 			<tbody>
-				<thead>
-					<th colspan="8" style="background-color: black; color: #fff;">
-						<h1>English Language and Literature by Dr. Liza Das</h1>
-					</th>
-				</thead>
-			</tbody>
-			<tbody id="course1">
 				<th colspan="2">
 					<h3>Reference Text</h3>
 				</th>
 				<th colspan="1">
 					<h3>Original Videos / Audios</h3>
 				</th>
-				<th></th>
+				<td colspan="1" align="center">
+					<i>Prosody transfer to the original audio style</i>
+				</td>
 				<th colspan="1">
 					<audio controls style="width: 150px;">
-						<source src='./audios/prosody/dv3_f.wav' type="audio/wav"> </audio>
+						<source src='./audios/prosody/iitmf.wav' type="audio/wav"> </audio>
 				</th>
 				<th colspan="1">
 					<audio controls style="width: 150px;">
@@ -515,6 +510,7 @@
 				</thead>
 
 			</tbody>
+			
 			<tbody>
 				<thead>
 					<th colspan="8" style="background-color: black; color: #fff;">
@@ -523,6 +519,7 @@
 				</thead>
 			</tbody>
 			<tbody id="course2"></tbody>
+			
 			<tbody>
 				<thead>
 					<th colspan="8" style="background-color: black; color: #fff;">
@@ -531,6 +528,15 @@
 				</thead>
 			</tbody>
 			<tbody id="course3"></tbody>
+
+			<tbody>
+				<thead>
+					<th colspan="8" style="background-color: black; color: #fff;">
+						<h1>English Language and Literature by Dr. Liza Das</h1>
+					</th>
+				</thead>
+			</tbody>
+			<tbody id="course1"></tbody>
 		</table>
 	</div>
 
@@ -632,7 +638,7 @@
 
 		function insert1(sen, v1, a1, a2, a3, a4, a5) {
 			s = `<tr>
-					<th colspan='2' style="text-align:center width: 350px"> ${sen} </th>
+					<td colspan='2' style="text-align:center width: 350px"> ${sen} </td>
 					<td style="text-align:center">
 						<video controls width="240" height="160">
 							<source src=${v1} type="video/mp4">
@@ -675,7 +681,7 @@
 
 		function insert2(sen, a0, a1, a2, a3, a4, a5) {
 			s = `<tr>
-					<th colspan='2' style="text-align:center width: 350px"> ${sen} </th>
+					<td colspan='2' style="text-align:center width: 350px"> ${sen} </td>
 					<td colspan='1' style="text-align:center">
 						<audio controls="" style="width: 150px";>
 							<source src=${a0} type="audio/wav">
