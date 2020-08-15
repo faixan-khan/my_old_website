@@ -191,12 +191,15 @@
 	td {
 		padding: 10px;
 	}
-	
+
 
 	tr:hover {
 		background-color: #f5f5f5;
 	}
-	tr:nth-child(even) {background-color: #f2f2f2;}
+
+	tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
 </style>
 
 <body>
@@ -204,6 +207,7 @@
 		<button class="tablinks" onclick="func(event, 'About')">About</button>
 		<button class="tablinks" onclick="func(event, 'Results')">Results</button>
 		<button class="tablinks" onclick="func(event, 'Prosody')" id="defaultOpen">Prosody Transfer</button>
+		<button class="tablinks" onclick="func(event, 'IITM')" id="defaultOpen">IITM-Dataset</button>
 		<button class="tablinks" onclick="func(event, 'Observations')">Observations</button>
 	</div>
 	<div id="About" class="tabcontent">
@@ -510,7 +514,7 @@
 				</thead>
 
 			</tbody>
-			
+
 			<tbody>
 				<thead>
 					<th colspan="8" style="background-color: black; color: #fff;">
@@ -519,7 +523,7 @@
 				</thead>
 			</tbody>
 			<tbody id="course2"></tbody>
-			
+
 			<tbody>
 				<thead>
 					<th colspan="8" style="background-color: black; color: #fff;">
@@ -539,7 +543,128 @@
 			<tbody id="course1"></tbody>
 		</table>
 	</div>
-
+	<div id="IITM" class="tabcontent">
+		<h1 align=center>Few Samples from IITM Dataset</h1>
+		<table align=center style="width: 100%;" id="tableMy" border="1" border-collapse>
+			<tbody>
+				<th colspan="1">Language abbrviation</th>
+				<th colspan="2">Male</th>
+				<th colspan="2">Female</th>
+			</tbody>
+			<tbody>
+				<tr>
+					<td style="text-align:center">as</td>
+					<td> <audio controls>
+							<source src='./audios/IITM/as-m1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/as-m2.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/as-f1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/as-f2.wav' type="audio/wav"> </audio> </td>
+				</tr>
+				<tr>
+					<td style="text-align:center">bn</td>
+					<td> <audio controls>
+							<source src='./audios/IITM/bn-m1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/bn-m2.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/bn-f1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/bn-f2.wav' type="audio/wav"> </audio> </td>
+				</tr>
+				<tr>
+					<td style="text-align:center">gu</td>
+					<td> <audio controls>
+							<source src='./audios/IITM/gu-m1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/gu-m2.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/gu-f1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/gu-f2.wav' type="audio/wav"> </audio> </td>
+				</tr>
+				<tr>
+					<td style="text-align:center">hi</td>
+					<td> <audio controls>
+							<source src='./audios/IITM/hi-m1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/hi-m2.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/hi-f1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/hi-f2.wav' type="audio/wav"> </audio> </td>
+				</tr>
+				<tr>
+					<td style="text-align:center">kn</td>
+					<td> <audio controls>
+							<source src='./audios/IITM/kn-m1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/kn-m2.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/kn-f1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/kn-f2.wav' type="audio/wav"> </audio> </td>
+				</tr>
+				<tr>
+					<td style="text-align:center">ma</td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ma-m1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ma-m2.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ma-f1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ma-f2.wav' type="audio/wav"> </audio> </td>
+				</tr>
+				<tr>
+					<td style="text-align:center">ml</td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ml-m1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ml-m2.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ml-f1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ml-f2.wav' type="audio/wav"> </audio> </td>
+				</tr>
+				<tr>
+					<td style="text-align:center">ra</td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ra-m1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ra-m2.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ra-f1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ra-f2.wav' type="audio/wav"> </audio> </td>
+				</tr>
+				<tr>
+					<td style="text-align:center">ta</td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ta-m1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ta-m2.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ta-f1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/ta-f2.wav' type="audio/wav"> </audio> </td>
+				</tr>
+				<tr>
+					<td style="text-align:center">te</td>
+					<td> <audio controls>
+							<source src='./audios/IITM/te-m1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/te-m2.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/te-f1.wav' type="audio/wav"> </audio> </td>
+					<td> <audio controls>
+							<source src='./audios/IITM/te-f2.wav' type="audio/wav"> </audio> </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 	<div id="Observations" class="tabcontent">
 		<center>
 			<h1>Observations</h1>
